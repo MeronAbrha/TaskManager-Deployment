@@ -1,0 +1,6 @@
+[submodule "taskmanager"]
+	path = taskmanager
+	url = https://github.com/MeronAbrha/taskmanager.git
+[submodule "TaskManager-UI"]
+	path = TaskManager-UI
+	url = https://github.com/MeronAbrha/TaskManager-UI.git
