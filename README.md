@@ -9,6 +9,3 @@ git clone --recurse-submodules https://github.com/MeronAbrha/TaskManager-Deploym
 cd TaskManager-Deployment
 docker-compose up --build
 ```
-
-git submodule update --init or git submodule update --init
-#git submodule update --remote --init --recursive

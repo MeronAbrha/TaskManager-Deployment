@@ -9,6 +9,12 @@ services:
     networks:
       - tasknet
 
+  backend-test:
+    build: ./taskmanager
+    command: ["mvn", "test"]
+    networks:
+      - tasknet
+
   frontend:
     build:
       context: ./TaskManager-UI
@@ -16,6 +22,12 @@ services:
       - "3000:80"
     depends_on:
       - backend
+    networks:
+      - tasknet
+
+  frontend-test:
+    build: ./TaskManager-UI
+    command: ["npm", "test", "--", "--watchAll=false"]
     networks:
       - tasknet
 
